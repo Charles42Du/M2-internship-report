@@ -3,9 +3,10 @@ from skimage.metrics import structural_similarity
 import cv2
 import numpy as np
 
-first = cv2.imread('3.png')
-second = cv2.imread('4.png')
-
+first = cv2.imread('C:\\Users\\charles.du\\Desktop\\img\\a.png')
+second = cv2.imread('C:\\Users\\charles.du\\Desktop\\img\\b.png')
+print(first.shape)
+print(second.shape)
 # Convert images to grayscale
 first_gray = cv2.cvtColor(first, cv2.COLOR_BGR2GRAY)
 second_gray = cv2.cvtColor(second, cv2.COLOR_BGR2GRAY)
